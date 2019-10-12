@@ -1,5 +1,5 @@
-first: first.o
-	g++ -o first first.o
+main: main.o
+	g++ -o main main.o
 
-first.o: first.cpp
-	g++ -c -std=c++11 first.cpp
+main.o: main.cpp
+	g++ -c -std=c++11 main.cpp

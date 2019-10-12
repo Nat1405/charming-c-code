@@ -256,13 +256,16 @@ void Board::CascadeSolve(){
 
 int main(){
 	
+	// Do setup
 	Board board(9);
 	board.Init_Board();
 	board.Read_File("example.txt");
 	board.Print_Board();
+	// Start solving the board
 	board.Init_Solutions();
 	board.PruneSolutions();
 	board.CascadeSolve();
+	board.Print_Board();
 	//board.PrintSolutions();
 	if (board.Is_Solved()){
 		cout << "Solved:\n";
